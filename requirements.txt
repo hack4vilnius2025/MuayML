@@ -1,7 +1,7 @@
 flask==3.0.0
 flask-cors==4.0.0
-opencv-python-headless==4.12.0.88
-ultralytics==8.3.228
-numpy==2.2.6
+opencv-python-headless==4.10.0.84
+ultralytics==8.0.196
+numpy==1.24.3
 werkzeug==3.0.1
 gunicorn==21.2.0
