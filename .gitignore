@@ -30,7 +30,6 @@ Thumbs.db
 .env
 
 # Jupyter Notebook (not needed for deployment)
-karate.ipynb
 .ipynb_checkpoints/
 
 # Test videos (not needed for deployment)
