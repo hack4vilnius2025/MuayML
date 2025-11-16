@@ -29,8 +29,7 @@ Thumbs.db
 # Environment
 .env
 
-# Jupyter Notebook (not needed for deployment)
-.ipynb_checkpoints/
+
 
 # Test videos (not needed for deployment)
 Advanced_Karate.mp4
