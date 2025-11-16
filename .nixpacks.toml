@@ -1,5 +1,8 @@
+[build]
+builder = "NIXPACKS"
+
 [phases.setup]
-aptPkgs = [
+nixPkgs = [
   "libgl1",
   "libglib2.0-0",
   "libsm6",
