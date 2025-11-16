@@ -1,0 +1,8 @@
+[phases.setup]
+nixPkgs = [
+  "python310",
+  "ffmpeg",
+  "libGL",
+  "libGLU",
+  "pkg-config"
+]

@@ -2,7 +2,12 @@ flask==3.0.3
 flask-cors==4.0.0
 gunicorn==21.2.0
 opencv-python-headless==4.8.1.78
-ultralytics==8.1.0
-torch==2.1.0
-torchvision==0.16.0
-numpy==1.26.0
+numpy==1.26.4
+
+# CPU-only PyTorch wheels (required!)
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.1.0+cpu
+torchvision==0.16.0+cpu
+
+# Stable ultralytics version compatible with torch 2.1
+ultralytics==8.0.196
