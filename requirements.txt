@@ -1,13 +1,6 @@
-flask==3.0.3
-flask-cors==4.0.0
-gunicorn==21.2.0
-opencv-python-headless==4.10.0.84
-numpy==1.26.4
-
-# CPU-only PyTorch for Python 3.11
---extra-index-url https://download.pytorch.org/whl/cpu
-torch==2.3.1+cpu
-torchvision==0.18.1+cpu
-
-# Ultralytics compatible with torch 2.3 and Python 3.11
-ultralytics==8.2.0
+flask
+flask-cors
+opencv-python-headless
+ultralytics
+numpy
+requests

@@ -351,8 +351,7 @@ if __name__ == '__main__':
     # Initialize model before starting server
     initialize_model()
     
-    # Get port from environment variable (Railway sets this)
-    port = int(os.environ.get('PORT', 5000))
-    
-    # Run Flask app
-    app.run(host='0.0.0.0', port=port, debug=False)
+    # Run on local network - accessible from any device on same WiFi
+    # Find your local IP: ipconfig (Windows) or ifconfig (Mac/Linux)
+    # Access from other devices: http://YOUR_LOCAL_IP:5000/api/analyze
+    app.run(host='0.0.0.0', port=5000, debug=True)
