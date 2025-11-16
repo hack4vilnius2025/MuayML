@@ -3,14 +3,15 @@ builder = "NIXPACKS"
 
 [phases.setup]
 nixPkgs = [
-  "libgl1",
-  "libglib2.0-0",
-  "libsm6",
-  "libxext6",
-  "libxrender1",
+  "python311",
+  "mesa",
+  "libglvnd",
+  "glib",
+  "xorg.libSM",
+  "xorg.libXext",
+  "xorg.libXrender",
   "ffmpeg"
 ]
-
 
 [phases.install]
 cmds = ["pip install --no-cache-dir -r requirements.txt"]
