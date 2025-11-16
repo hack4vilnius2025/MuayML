@@ -41,7 +41,9 @@ class VideoProcessor:
         """
         self.reference_data = reference_data
         self.model = YOLO('yolo11n-pose.pt')
-        logger.info("✓ YOLOv11 pose model loaded")
+        # Force CPU-only mode for Railway deployment
+        self.model.to('cpu')
+        logger.info("✓ YOLOv11 pose model loaded (CPU mode)")
         
         # Body-part specific box sizes for visualization
         self.body_part_sizes = {

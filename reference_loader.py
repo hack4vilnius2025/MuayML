@@ -40,7 +40,9 @@ class ReferenceLoader:
         """
         self.reference_video_path = Path(reference_video_path)
         self.model = YOLO('yolo11n-pose.pt')
-        logger.info("✓ Reference loader initialized")
+        # Force CPU-only mode for Railway deployment
+        self.model.to('cpu')
+        logger.info("✓ Reference loader initialized (CPU mode)")
     
     def extract_keypoints_from_frame(self, frame, confidence_threshold=0.5):
         """
