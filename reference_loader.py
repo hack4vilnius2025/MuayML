@@ -39,7 +39,7 @@ class ReferenceLoader:
             reference_video_path: Path to Nika3 perfect reference video
         """
         self.reference_video_path = Path(reference_video_path)
-        self.model = YOLO('yolo11n-pose.pt')
+        self.model = YOLO('yolov8n-pose.pt')
         # Force CPU-only mode for Railway deployment
         self.model.to('cpu')
         logger.info("✓ Reference loader initialized (CPU mode)")

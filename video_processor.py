@@ -40,10 +40,10 @@ class VideoProcessor:
             reference_data: Dictionary containing reference keypoints from Nika3
         """
         self.reference_data = reference_data
-        self.model = YOLO('yolo11n-pose.pt')
+        self.model = YOLO('yolov8n-pose.pt')
         # Force CPU-only mode for Railway deployment
         self.model.to('cpu')
-        logger.info("✓ YOLOv11 pose model loaded (CPU mode)")
+        logger.info("✓ YOLOv8 pose model loaded (CPU mode)")
         
         # Body-part specific box sizes for visualization
         self.body_part_sizes = {
