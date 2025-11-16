@@ -34,7 +34,16 @@ karate.ipynb
 .ipynb_checkpoints/
 
 # Test videos (not needed for deployment)
-*.mp4
+Advanced_Karate.mp4
+Beginner_Karate.mp4
+Noob_Karate.mp4
+Semi_Advanced_Karate.mp4
+Nika1.mp4
+Nika2.mp4
+Nika3.mp4
+Nika4.mp4
+NikaData.mp4
+*_analyzed.mp4
 
 # Runtime folders (created automatically)
 uploads/
@@ -43,6 +52,3 @@ outputs/
 # Example files (not needed for deployment)
 backend_integration_examples.py
 backend_video_buffer_examples.py
-
-# IMPORTANT: Include reference video for deployment
-!nika3_perfect_reference.mp4
